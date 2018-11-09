@@ -16,7 +16,7 @@ class SQLObject
         @columns = columns.first.map {|column| column.to_sym}
       end
     end
-    
+
   def self.finalize!
   end
 
@@ -45,16 +45,16 @@ class SQLObject
   end
 
   def attributes
-    # ...
+    @attributes ||= {}
   end
 
   def attribute_values
-    # ...
   end
 
   def insert
     # ...
   end
+
 
   def update
     # ...
